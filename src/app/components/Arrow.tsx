@@ -17,7 +17,7 @@ const ScrollToBottomArrow: React.FC = () => {
       aria-label="Scroll to bottom"
     >
       
-        <img src="/seta.png" alt="Scroll Down" className="h-7 slow-bounce" />
+        <img src="./seta.png" alt="Scroll Down" className="h-7 slow-bounce" />
     
     </button>
   );
