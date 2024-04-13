@@ -65,7 +65,7 @@ const Home: NextPage = () => {
     <div>
       <div className="relative w-full bg-black overflow-hidden image-background">
       <img 
-        src="/background.jpg" 
+        src="./background.jpg" 
         alt="Background" 
         className="w-full object-cover object-center" 
         style={{ height: 'calc(100vh - 6rem)', objectPosition: '50% 35%', filter: 'grayscale(0%)'  }}
