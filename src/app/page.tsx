@@ -63,9 +63,9 @@ const Home: NextPage = () => {
           style={{ height: 'calc(100vh - 6rem)', objectPosition: '50% 35%', filter: 'grayscale(0%)'  }}
         />
         <div className="absolute top-0 left-0 right-0 flex flex-col items-center justify-center min-h-screen">
-          <h1 className="text-8xl text-center text-white playfair cursor-default">
-            Arte da Influência
-          </h1>
+        <h1 className="text-8xl sm:text-7xl md:text-6xl lg:text-5xl xl:text-4xl text-center text-white playfair cursor-default">
+          Arte da Influência
+        </h1>
           <p className="text-lg mt-20 text-center text-white cursor-default">
             O seu guia completo para a Criação de Conteúdo Digital!
           </p>
