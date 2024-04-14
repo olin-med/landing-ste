@@ -66,7 +66,7 @@ const Home: NextPage = () => {
           <h1 className="text-8xl text-center text-white playfair cursor-default">
             Arte da Influência
           </h1>
-          <p className="text-lg mt-20 text-white cursor-default">
+          <p className="text-lg mt-20 text-center text-white cursor-default">
             O seu guia completo para a Criação de Conteúdo Digital!
           </p>
         </div>
