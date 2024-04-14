@@ -28,7 +28,7 @@ const Home: NextPage = () => {
   const lastScrollTop = useRef(0);
 
   useEffect(() => {
-    if (window.innerWidth > 768) { // Disable autoscroll on screens narrower than 768px
+    if (window.innerWidth > 1000) { // Disable autoscroll on screens narrower than 768px
       lastScrollTop.current = window.scrollY;
       const handleScroll = () => {
         const currentScrollTop = window.scrollY;
