@@ -62,20 +62,22 @@ const Home: NextPage = () => {
           className="w-full object-cover object-center" 
           style={{ height: 'calc(100vh - 6rem)', objectPosition: '50% 35%', filter: 'grayscale(0%)'  }}
         />
-        <div className="absolute top-0 left-0 right-0 flex flex-col xs:flex-row items-center justify-center min-h-screen">
-        <h1 className="xs:text-7xl md:text-8xl text-center text-white playfair cursor-default">
-          Arte da Influência
-        </h1>
-          <p className="xs:text-sm md:text-lg mt-20 text-center text-white cursor-default">
-            O seu guia completo para a Criação de Conteúdo Digital!
-          </p>
+        <div className="absolute inset-0 flex flex-col flex-row items-center justify-center min-h-screen">
+            <h1 className="text-4xl sm:text-8xl text-center text-white playfair cursor-default">
+              Arte da Influência
+            </h1>
+            <p className="text-sm sm:text-lg mt-10 sm:mt-20 text-center text-white cursor-default">
+              O seu guia completo para a Criação de Conteúdo Digital!
+            </p>
         </div>
+
       </div>
-      <div className="bg-black flex flex-col items-center w-full py- gap-y-10 pb-10">
+      <div className="bg-black flex flex-col items-center w-full py- gap-y-2 sm:gap-y-5 md:gap-y-10 pb-10">
         {cardsData.map((card, index) => (
-          <Card key={index} title={card.title} content={card.content} />
+          <Card key={index} title={card.title} content={card.content}/>
         ))}
       </div>
+
       <Arrow />
     </div>
   );
