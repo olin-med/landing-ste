@@ -28,29 +28,31 @@ const Home: NextPage = () => {
   const lastScrollTop = useRef(0);
 
   useEffect(() => {
-    lastScrollTop.current = window.scrollY;
-    const handleScroll = () => {
-      const currentScrollTop = window.scrollY;
-      
-      if (currentScrollTop > lastScrollTop.current) {
-        gsap.to(window, {
-          duration: 3,
-          scrollTo: {y: document.body.scrollHeight, autoKill: false}
-        });
-      } else if (currentScrollTop < lastScrollTop.current) {
-        gsap.to(window, {
-          duration: 2,
-          scrollTo: {y: 0, autoKill: false}
-        });
-      }
-      lastScrollTop.current = currentScrollTop;
-    };
+    if (window.innerWidth > 768) { // Disable autoscroll on screens narrower than 768px
+      lastScrollTop.current = window.scrollY;
+      const handleScroll = () => {
+        const currentScrollTop = window.scrollY;
+        
+        if (currentScrollTop > lastScrollTop.current) {
+          gsap.to(window, {
+            duration: 3,
+            scrollTo: {y: document.body.scrollHeight, autoKill: false}
+          });
+        } else if (currentScrollTop < lastScrollTop.current) {
+          gsap.to(window, {
+            duration: 2,
+            scrollTo: {y: 0, autoKill: false}
+          });
+        }
+        lastScrollTop.current = currentScrollTop;
+      };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+      window.addEventListener('scroll', handleScroll, { passive: true });
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
   }, []);
 
   return (
