@@ -1,59 +1,30 @@
-'use client';
-import { useEffect, useRef } from 'react';
-import { throttle } from 'lodash';
+'use client'
+import { useRouter } from 'next/navigation';
 import type { NextPage } from 'next';
-import gsap from 'gsap';
-import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin';
 import Card from './components/Card';
 import Arrow from './components/Arrow';
 
-gsap.registerPlugin(ScrollToPlugin);
-
 const Home: NextPage = () => {
+  const router = useRouter();
+
   const cardsData = [
     {
       title: "EBOOK",
-      content: "This is the content of card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      content: "This is the content of card 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      route: "/ebook"
     },
     {
       title: "CURSO",
-      content: "This is the content of card 2. Vestibulum in neque et nisl consectetur convallis."
+      content: "This is the content of card 2. Vestibulum in neque et nisl consectetur convallis.",
+      route: "/curso"
     },
     {
       title: "MENTORIA",
-      content: "This is the content of card 3. Vestibulum in neque et nisl consectetur convallis."
+      content: "This is the content of card 3. Vestibulum in neque et nisl consectetur convallis.",
+      route: "/mentoria"
     }
   ];
 
-  const lastScrollTop = useRef(0);
-
-  useEffect(() => {
-    if (window.innerWidth > 1000) { // Disable autoscroll on screens narrower than 768px
-      lastScrollTop.current = window.scrollY;
-      const handleScroll = () => {
-        const currentScrollTop = window.scrollY;
-        
-        if (currentScrollTop > lastScrollTop.current) {
-          gsap.to(window, {
-            duration: 3,
-            scrollTo: {y: document.body.scrollHeight, autoKill: false}
-          });
-        } else if (currentScrollTop < lastScrollTop.current) {
-          gsap.to(window, {
-            duration: 2,
-            scrollTo: {y: 0, autoKill: false}
-          });
-        }
-        lastScrollTop.current = currentScrollTop;
-      };
-
-      window.addEventListener('scroll', handleScroll, { passive: true });
-
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }
-  }, []);
 
   return (
     <div>
@@ -76,7 +47,9 @@ const Home: NextPage = () => {
       </div>
       <div className="bg-black flex flex-col items-center w-full py- gap-y-2 sm:gap-y-5 md:gap-y-10 pb-10">
         {cardsData.map((card, index) => (
-          <Card key={index} title={card.title} content={card.content}/>
+          <div onClick={() => router.push(card.route)} key={index}>
+            <Card title={card.title} content={card.content}/>
+          </div>
         ))}
       </div>
 
