@@ -19,7 +19,7 @@ const HotmartCheckout: React.FC = () => {
       
       if (checkoutElements) {
         const elements = checkoutElements.init('inlineCheckout', {
-          offer: 'https://pay.hotmart.com/F84179934X?off=ls6csdn4&bid=1714430334325' // This should be your offer code
+          offer: 'hF84179934X' // This should be your offer code
         });
         elements.mount('#inline_checkout');
       }
