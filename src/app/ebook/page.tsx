@@ -38,6 +38,12 @@ const Ebook: NextPage = () => {
               allowFullScreen
             ></iframe>
           </div>
+          <button
+            onClick={() => router.push('/checkout')}
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-8"
+          >
+            Compre já!
+          </button>
         </div>
       </div>
     </div>
