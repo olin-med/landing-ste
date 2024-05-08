@@ -29,6 +29,12 @@ const Home: NextPage = () => {
 
       </div>
       <div className="bg-black flex flex-col items-center w-full gap-y-2">
+        <button
+          onClick={() => router.push('https://pay.hotmart.com/F84179934X?off=9odh79eu&checkoutMode=10')}
+          className="bg-green-500 hover:bg-green-700 text-white text-xl font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-1/6 mt-20"
+        >
+          Quero meu guia!
+        </button>
         <div className="w-full max-w-4xl p-4 mt-16">
           <iframe
             className="w-full aspect-video"
@@ -50,7 +56,22 @@ const Home: NextPage = () => {
         Mas nem sempre foi assim. Até 2020, eu recebia R$5,07 por hora, trabalhando como CLT na produção de uma empresa calçadista. Eu acordava de segunda a sexta-feira às 5h da manhã para pegar o ônibus e voltava para casa às 19h. Muitas vezes, também fazia horas extras, chegando em casa às 23h.
         </p>
 
-        <img src="./foto-ste1.jpg" alt="" className='size-1/3'/>
+        <img src="./foto-ste1.jpg" alt="" className='size-1/3 mt-36'/>
+
+        <div className="flex flex-col items-center w-full mt-36">
+          <div className="w-3/4 sm:w-1/2 lg:w-3/4 bg-black rounded-lg border border-white border-opacity-25 hover:text-shadow-white-glow transition-all duration-700 p-5 text-center text-white cursor-pointer shadow-[0_10px_15px_rgba(255,255,255,0.2)] hover:shadow-[0_20px_20px_rgba(255,255,255,0.3)] pb-20">
+            <div className="text-center">
+              <p className="text-white-500 mt-8">
+                Os seus sonhos estão apenas esperando por essa sua decisão!
+              </p>
+              <button className="bg-green-500 hover:bg-green-700 text-white text-xl font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-1/4 mt-10"
+              onClick={() => router.push('https://pay.hotmart.com/F84179934X?off=9odh79eu&checkoutMode=10')}
+              >
+                QUERO O MEU GUIA!
+              </button>
+            </div>
+          </div>
+        </div>
 
         <p className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-36 max-w-2xl mx-auto">
         Eu já estive no seu lugar…
@@ -63,7 +84,7 @@ const Home: NextPage = () => {
 
         <img src="./foto-ste2.jpg" alt="" className='size-1/3'/>
 
-        <div className="grid grid-cols-3 gap-4 mt-8 mb-20">
+        <div className="grid grid-cols-3 gap-4 mt-36">
         {/* Grid Item 1 */}
           <div className="max-w-md p-8 hover:text-shadow-white-glow">
             <div className='center-icon'>
@@ -113,12 +134,22 @@ const Home: NextPage = () => {
             <p className="text-sm sm:text-lg text-justify text-white cursor-default">Viva a vida que você merece; liberte-se das correntes e dos limites de ser ‘apenas mais um’.</p>
           </div>
         </div>
-        <button
-          onClick={() => router.push('https://pay.hotmart.com/F84179934X?off=9odh79eu&checkoutMode=10')}
-          className="bg-green-500 hover:bg-green-700 text-white text-xl font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-1/6 mb-20"
-        >
-          Compre já!
-        </button>
+        <div className="flex flex-col items-center w-full mt-36 mb-36">
+          <div className="w-3/4 sm:w-1/2 lg:w-3/4 bg-black rounded-lg border border-white border-opacity-25 hover:text-shadow-white-glow transition-all duration-700 p-5 text-center text-white cursor-pointer shadow-[0_10px_15px_rgba(255,255,255,0.2)] hover:shadow-[0_20px_20px_rgba(255,255,255,0.3)] pb-20">
+            <div className="text-center">
+              <p className="text-6xl text-white-900 playfair mt-10"><s>R$199,99</s></p>
+              <p className="text-6xl text-white-600 mt-2 playfair">por 12x R$9,77</p>
+              <p className="text-sm text-white-500 mt-8">
+                Os seus sonhos estão apenas esperando por essa sua decisão!
+              </p>
+              <button className="bg-green-500 hover:bg-green-700 text-white text-xl font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-1/4 mt-10"
+              onClick={() => router.push('https://pay.hotmart.com/F84179934X?off=9odh79eu&checkoutMode=10')}
+              >
+                QUERO O MEU GUIA!
+              </button>
+            </div>
+          </div>
+        </div>
         </div>
       <Arrow />
     </div>
