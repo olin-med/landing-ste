@@ -114,7 +114,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <button
-          oonClick={() => router.push('https://pay.hotmart.com/F84179934X?off=ls6csdn4&checkoutMode=10')}
+          onClick={() => router.push('https://pay.hotmart.com/F84179934X?off=ls6csdn4&checkoutMode=10')}
           className="bg-green-500 hover:bg-green-700 text-white text-xl font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-1/6 mb-20"
         >
           Compre já!
