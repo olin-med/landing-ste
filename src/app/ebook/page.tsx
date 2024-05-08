@@ -84,56 +84,57 @@ const Home: NextPage = () => {
 
         <img src="./foto-ste2.jpg" alt="" className='size-1/3'/>
 
-        <div className="grid grid-cols-3 gap-4 mt-36">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-36">
         {/* Grid Item 1 */}
-          <div className="max-w-md p-8 hover:text-shadow-white-glow">
-            <div className='center-icon'>
-              <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
-            </div>
-            <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Aprenda a se posicionar</h3>
-            <p className="text-sm sm:text-lg text-justify text-white cursor-default">Crie um posicionamento objetivo, com confiança e assertividade. Aqui, compartilho minhas estratégias para que você também possa alcançar seus objetivos.</p>
+        <div className="max-w-md p-8 hover:text-shadow-white-glow">
+          <div className='center-icon'>
+            <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
           </div>
-          {/* Grid Item 2 */}
-          <div className="max-w-md p-8">
-            <div className='center-icon'>
-              <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
-            </div>
-            <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Assine contratos de parcerias</h3>
-            <p className="text-sm sm:text-lg text-justify text-white cursor-default">Aprenda a analisar e negociar parcerias com as estratégias certas e uma proposta irrecusável.</p>
-          </div>
-          {/* Grid Item 3 */}
-          <div className="max-w-md p-8">
-            <div className='center-icon'>
-              <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
-            </div>
-            <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Mude a sua mentalidade</h3>
-            <p className="text-sm sm:text-lg text-justify text-white cursor-default">Transforme sua mentalidade, se liberte de medos e crenças limitantes, e desbloqueie todo o potencial da criação de conteúdo digital.</p>
-          </div>
-          {/* Grid Item 4 */}
-          <div className="max-w-md p-8">
-            <div className='center-icon'>
-              <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
-            </div>
-            <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Trabalhe de qualquer lugar</h3>
-            <p className="text-sm sm:text-lg text-justify text-white cursor-default">As redes sociais possibilitam que você trabalhe de qualquer lugar, apenas com um celular e acesso à internet.</p>
-          </div>
-          {/* Grid Item 5 */}
-          <div className="max-w-md p-8">
-            <div className='center-icon'>
-              <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
-            </div>
-            <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Realize os seus sonhos</h3>
-            <p className="text-sm sm:text-lg text-justify text-white cursor-default">Vejo os seus sonhos e objetivos se realizarem diante dos seus olhos e antes do que você poderá imaginar.</p>
-          </div>
-          {/* Grid Item 6 */}
-          <div className="max-w-md p-8">
-            <div className='center-icon'>
-              <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
-            </div>
-            <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Viva e não apenas sobreviva</h3>
-            <p className="text-sm sm:text-lg text-justify text-white cursor-default">Viva a vida que você merece; liberte-se das correntes e dos limites de ser ‘apenas mais um’.</p>
-          </div>
+          <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Aprenda a se posicionar</h3>
+          <p className="text-sm sm:text-lg text-justify text-white cursor-default">Crie um posicionamento objetivo, com confiança e assertividade. Aqui, compartilho minhas estratégias para que você também possa alcançar seus objetivos.</p>
         </div>
+        {/* Grid Item 2 */}
+        <div className="max-w-md p-8">
+          <div className='center-icon'>
+            <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
+          </div>
+          <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Assine contratos de parcerias</h3>
+          <p className="text-sm sm:text-lg text-justify text-white cursor-default">Aprenda a analisar e negociar parcerias com as estratégias certas e uma proposta irrecusável.</p>
+        </div>
+        {/* Grid Item 3 */}
+        <div className="max-w-md p-8">
+          <div className='center-icon'>
+            <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
+          </div>
+          <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Mude a sua mentalidade</h3>
+          <p className="text-sm sm:text-lg text-justify text-white cursor-default">Transforme sua mentalidade, se liberte de medos e crenças limitantes, e desbloqueie todo o potencial da criação de conteúdo digital.</p>
+        </div>
+        {/* Grid Item 4 */}
+        <div className="max-w-md p-8">
+          <div className='center-icon'>
+            <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
+          </div>
+          <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Trabalhe de qualquer lugar</h3>
+          <p className="text-sm sm:text-lg text-justify text-white cursor-default">As redes sociais possibilitam que você trabalhe de qualquer lugar, apenas com um celular e acesso à internet.</p>
+        </div>
+        {/* Grid Item 5 */}
+        <div className="max-w-md p-8">
+          <div className='center-icon'>
+            <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
+          </div>
+          <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Realize os seus sonhos</h3>
+          <p className="text-sm sm:text-lg text-justify text-white cursor-default">Vejo os seus sonhos e objetivos se realizarem diante dos seus olhos e antes do que você poderá imaginar.</p>
+        </div>
+        {/* Grid Item 6 */}
+        <div className="max-w-md p-8">
+          <div className='center-icon'>
+            <FlareOutlinedIcon style={{ fontSize: 40, color: 'white' }}/>
+          </div>
+          <h3 className="text-sm sm:text-lg text-center font-bold text-white cursor-default mt-4 mb-6">Viva e não apenas sobreviva</h3>
+          <p className="text-sm sm:text-lg text-justify text-white cursor-default">Viva a vida que você merece; liberte-se das correntes e dos limites de ser ‘apenas mais um’.</p>
+        </div>
+      </div>
+
         <div className="flex flex-col items-center w-full mt-36 mb-36">
           <div className="w-3/4 sm:w-1/2 lg:w-3/4 bg-black rounded-lg border border-white border-opacity-25 hover:text-shadow-white-glow transition-all duration-700 p-5 text-center text-white cursor-pointer shadow-[0_10px_15px_rgba(255,255,255,0.2)] hover:shadow-[0_20px_20px_rgba(255,255,255,0.3)] pb-20">
             <div className="text-center">
