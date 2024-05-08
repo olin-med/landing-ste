@@ -1,0 +1,63 @@
+'use client'
+import type { NextPage } from 'next';
+import { useRouter } from 'next/navigation';
+
+const Ebook: NextPage = () => {
+  const router = useRouter();
+
+  // Example YouTube video ID
+  const videoId = "YOUR_YOUTUBE_VIDEO_ID"; // Replace this with your video ID
+
+  // YouTube embed URL construction
+  const embedUrl = `https://youtu.be/dQw4w9WgXcQ?feature=shared`;
+
+  return (
+    <div>
+      <div className="relative w-full bg-black overflow-hidden image-background">
+        <img 
+          src="./background.jpg" 
+          alt="Background" 
+          className="w-full object-cover object-center" 
+          style={{ height: 'calc(100vh)', objectPosition: '50% 35%', filter: 'blur(6px)' }}
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center min-h-screen">
+          <h1 className="text-4xl sm:text-8xl text-center text-white playfair cursor-default">
+            Arte da Influência
+          </h1>
+          <p className="text-sm sm:text-lg text-center text-white cursor-default p-4 sm:p-8">
+            O seu guia completo para a Criação de Conteúdo Digital!
+          </p>
+          {/* Video Embed */}
+          <div className="w-full max-w-4xl p-4">
+            <iframe
+              className="w-full aspect-video"
+              src='https://www.youtube.com/embed/dQw4w9WgXcQ?si=vBkTCV06cuO2WZ0R'
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          <p className="text-sm sm:text-lg text-center text-white cursor-default p-4 sm:p-8 max-w-2xl mx-auto">
+          Eu não sou ”mais uma coach de Instagram’‘…
+          </p>
+          <p className="text-sm sm:text-lg text-center text-white cursor-default p-4 sm:p-8 max-w-2xl mx-auto">
+
+          Oie, eu sou Sté Schuck. Tenho 23 anos e sou criadora digital. Falo sobre viagens e estilo de vida. Durante esse período como criadora de conteúdo, já assinei mais de 200 contratos com marcas, empresas e eventos.
+
+          Mas nem sempre foi assim. Até 2020, eu recebia R$5,07 por hora, trabalhando como CLT na produção de uma empresa calçadista. Eu acordava de segunda a sexta-feira às 5h da manhã para pegar o ônibus e voltava para casa às 19h. Muitas vezes, também fazia horas extras, chegando em casa às 23h.
+          </p>
+          <button
+            onClick={() => router.push('/checkout')}
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-8"
+          >
+            Compre já!
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Ebook;
